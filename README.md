@@ -1,3 +1,12 @@
+# Makefile for linux will be soon
+
+You'll need to download gost engine (https://github.com/gost-engine/engine), compile it and referense to some libs from it.
+Just do `gcc privkey.c /some/path/to/gost-engine/*.o` etc.
+
+I'll try to arrange it better
+
+# Below is for windows
+
 # privkey
 Converts a private key CryptoPro => OpenSSL container
 
@@ -5,7 +14,7 @@ You need to install Strawberry perl and Visual Studio C++
 
 ### Contents
 
-1) Download OpenSSL https://github.com/openssl/openssl/releases/tag/OpenSSL_1_1_1a 
+1) Download OpenSSL https://github.com/openssl/openssl/releases/tag/OpenSSL_1_1_1a
 and unpack it to dir "openssl-OpenSSL_1_1_1a"
 
 2) Compile OpenSSL via bat-file:
@@ -17,7 +26,7 @@ perl Configure VC-WIN32 no-hw no-asm
 nmake
 ~~~
 
-3) Download gost https://github.com/gost-engine/engine 
+3) Download gost https://github.com/gost-engine/engine
 and unpack it to dir "engine-master"
 
 4) Use this bat-file to compile privkey.exe :
